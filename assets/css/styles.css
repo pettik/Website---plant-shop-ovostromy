@@ -41,8 +41,8 @@
     hsl(15, 70%, 40%) 0%,
     hsl(20, 62%, 60%) 100%
   );
-  --title-color: hsl(0, 0%, 12%);
-  --text-color: hsl(0, 0%, 50%);
+  --title-color: hsl(0, 0%, 95%);
+  --text-color: hsl(0, 0%, 95%);
   --white-color: #fff;
   --body-color: hsl(0, 0%, 96%);
   --container-color: hsl(0, 0%, 100%);
@@ -169,11 +169,6 @@ body.dark-theme {
 }
 
 .dark-theme
-  :is(.home__shadow, .choose__shadow, .join__shadow, .features__shadow) {
-  background: hsla(15, 60%, 52%, 0.4);
-}
-
-.dark-theme
   :is(.popular__card:hover, .features__info-card:hover, .products__card:hover) {
   box-shadow: 0 12px 16px hsla(0, 0%, 0%, 0.2);
 }
@@ -235,7 +230,7 @@ body.dark-theme {
 .header {
   position: fixed;
   width: 100%;
-  background-color: hsl(0, 0%, 8%);
+  background-color: transparent;
   top: 0;
   left: 0;
   z-index: var(--z-fixed);
@@ -338,7 +333,7 @@ body.dark-theme {
 
 /* Change background header */
 .bg-header {
-  background-color: var(--body-color);
+  background-color: var(--green-dark-color);
   box-shadow: 0 2px 16px hsla(0, 0%, 0%, 0.1);
 }
 
@@ -365,8 +360,7 @@ body.dark-theme {
   left: 0;
   width: 100%;
   height: 95%;
-  background-color: hsl(0, 0%, 8%);
-  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 88%);
+  background-color: var(--green-dark-color);
 }
 
 .home__container {
@@ -453,19 +447,6 @@ body.dark-theme {
 .home__image {
   position: relative;
   justify-self: center;
-}
-
-.home__shadow {
-  position: absolute;
-  width: 200px;
-  height: 30px;
-  background: hsla(15, 60%, 52%, 0.6);
-  bottom: -0.75rem;
-  left: 0;
-  right: 0;
-  margin: 0 auto;
-  filter: blur(12px);
-  z-index: -1;
 }
 
 .home__img {
@@ -1197,7 +1178,6 @@ body.dark-theme {
 
   .home__container {
     column-gap: 4rem;
-    padding-bottom: 2rem;
   }
   .home__image {
     order: 2;
@@ -1295,7 +1275,7 @@ body.dark-theme {
   }
 
   .section {
-    padding-block: 7rem 2rem;
+    padding-block: 7rem 1.65rem;
   }
 
   .nav {
@@ -1310,19 +1290,13 @@ body.dark-theme {
   }
   .home__bg {
     height: 97%;
-    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 80%);
   }
   .home__blob {
     width: 530px;
     height: 670px;
     border: 10px solid transparent;
   }
-  .home__shadow {
-    width: 435px;
-    height: 60px;
-    bottom: -2rem;
-    filter: blur(28px);
-  }
+
   .home__img {
     width: 480px;
     transform: translateY(-10px);
