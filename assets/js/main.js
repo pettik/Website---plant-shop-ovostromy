@@ -52,6 +52,9 @@ const popularSwiper = new Swiper('.popular__content', {
     nextEl: '.swiper-button-next',
     prevEl: '.swiper-button-prev',
   },
+  pagination: {
+    el: '.swiper-pagination',
+  },
   breakpoints: {
     768: {
       centeredSlides: false,
