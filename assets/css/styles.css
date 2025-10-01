@@ -731,6 +731,43 @@ body.dark-theme {
 .grow__image {
   margin-top: 3rem;
 }
+/*=============== STEPS ===============*/
+
+.steps,
+.steps__step-text h3 {
+  color: var(--green-dark-color);
+}
+
+.steps__description {
+  text-align: center;
+}
+
+.steps__items {
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  row-gap: 3rem;
+  justify-content: center;
+}
+
+.steps__step {
+  display: flex;
+  column-gap: 1rem;
+}
+.steps__step-image {
+  background-color: var(--green-dark-color);
+  border-radius: 50%;
+  min-width: 4rem;
+  max-height: 4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.steps__step-image img {
+  min-width: 40%;
+  max-height: 40px;
+}
 /*=============== JOIN ===============*/
 .join__container {
   padding-top: 2.5rem;
