@@ -752,13 +752,14 @@ body.dark-theme {
 
 .steps__step {
   display: flex;
-  column-gap: 1rem;
+  align-items: center;
+  column-gap: 1.5em;
 }
 .steps__step-image {
   background-color: var(--green-dark-color);
   border-radius: 50%;
   min-width: 4rem;
-  max-height: 4rem;
+  height: 4rem;
   display: flex;
   justify-content: center;
   align-items: center;
