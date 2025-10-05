@@ -769,6 +769,40 @@ body.dark-theme {
   min-width: 40%;
   max-height: 40px;
 }
+
+/*=============== BLOG ===============*/
+
+.blog__container {
+  background-color: var(--gray-color);
+  border-radius: 3rem;
+  display: flex;
+  flex-direction: column;
+
+  height: 600px;
+}
+
+.blog__image,
+.blog__text {
+  flex: 1;
+  max-height: 300px;
+}
+
+.blog__image {
+  overflow: hidden;
+}
+
+.blog__image img {
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+}
+
+.blog__text h3,
+.blog__text p {
+  padding: 0 1rem;
+  color: var(--green-color);
+}
+
 /*=============== JOIN ===============*/
 .join__container {
   padding-top: 2.5rem;
