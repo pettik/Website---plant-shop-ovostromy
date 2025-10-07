@@ -47,7 +47,7 @@
   );
   --title-color: hsl(0, 0%, 95%);
   --text-color: hsl(0, 0%, 95%);
-  --text-color: hsl(0, 0%, 0%);
+  --black-color: hsl(0, 0%, 0%);
   --white-color: hsl(0, 0%, 100%);
   --body-color: hsl(0, 0%, 96%);
   --container-color: hsl(0, 0%, 100%);
