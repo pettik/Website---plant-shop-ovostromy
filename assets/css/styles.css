@@ -1,16 +1,16 @@
 /*=============== GOOGLE FONTS ===============*/
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&family=Poppins:wght@400;500&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&family=Poppins:wght@400;500&display=swap");
 
-@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
 .dm-serif-display-regular {
-  font-family: 'DM Serif Display', serif;
+  font-family: "DM Serif Display", serif;
   font-weight: 400;
   font-style: normal;
 }
 
 .dm-serif-display-regular-italic {
-  font-family: 'DM Serif Display', serif;
+  font-family: "DM Serif Display", serif;
   font-weight: 400;
   font-style: italic;
 }
@@ -54,9 +54,9 @@
 
   /*========== Font and typography ==========*/
   /*.5rem = 8px | 1rem = 16px ...*/
-  --body-font: 'Poppins', sans-serif;
-  --second-font: 'Montserrat', sans-serif;
-  --title-font: 'DM Serif Display', serif;
+  --body-font: "Poppins", sans-serif;
+  --second-font: "Montserrat", sans-serif;
+  --title-font: "DM Serif Display", serif;
   --bigger-font-size: 2.25rem;
   --big-font-size: 1.6rem;
   --h1-font-size: 1.5rem;
@@ -593,7 +593,7 @@ body.dark-theme {
 }
 
 .popular__data h2::after {
-  content: '';
+  content: "";
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
@@ -681,7 +681,7 @@ body.dark-theme {
 }
 .swiper-button-prev::after,
 .swiper-button-next::after {
-  content: '';
+  content: "";
 }
 
 .swiper-button-prev,
@@ -843,6 +843,46 @@ body.dark-theme {
   height: 100%;
 }
 /*=============== NEWSLETTER ===============*/
+.newsletter {
+  background-color: var(--green-dark-color);
+  padding: 1rem;
+}
+
+.newsletter h3.section__title {
+  text-align: left;
+  color: var(--white-color);
+  font-weight: var(--font-medium);
+}
+
+.newsletter__form {
+  display: flex;
+  width: 100%; /* zabere celou šířku rodiče (nebo stránky) */
+  max-width: 100%; /* pojistka proti přetečení */
+}
+
+.newsletter__input {
+  flex: 1; /* vyplní veškerý zbývající prostor */
+  padding: 0.75rem 1rem;
+  border: 1px solid #ccc;
+  border-right: none; /* aby se dotýkal tlačítka bez dvojitého okraje */
+  border-radius: 0.5rem 0 0 0.5rem;
+  font-size: 1rem;
+  outline: none;
+}
+
+.newsletter__button {
+  width: 100px; /* pevná šířka */
+  border: none;
+  background-color: var(--green-color);
+  color: white;
+  cursor: pointer;
+  border-radius: 0 0.5rem 0.5rem 0;
+  font-weight: 600;
+}
+
+.newsletter__button:hover {
+  background-color: var(--green-color-dark);
+}
 
 /*=============== FOOTER ===============*/
 .footer {
