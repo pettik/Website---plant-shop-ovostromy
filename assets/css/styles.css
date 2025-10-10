@@ -913,8 +913,13 @@ body.dark-theme {
 }
 
 .footer__data {
-  grid-template-columns: repeat(2, max-content);
-  gap: 2.5rem 4rem;
+  display: flex;
+  max-width: 100%;
+  flex-direction: column;
+}
+
+.footer__data p {
+  text-align: center;
 }
 
 .footer__title {
@@ -941,6 +946,7 @@ body.dark-theme {
 .footer__group,
 .footer__terms {
   display: flex;
+  justify-content: center;
 }
 
 .footer__social {
@@ -948,8 +954,8 @@ body.dark-theme {
 }
 
 .footer__social-link {
-  font-size: 1.25rem;
-  background: var(--third-gradient);
+  font-size: 2rem;
+  background: var(--white-color);
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
@@ -973,7 +979,17 @@ body.dark-theme {
 }
 
 .footer__copy {
+  text-transform: uppercase;
   font-size: small;
+}
+
+#pages {
+  display: none;
+}
+ul.footer__links {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
 }
 
 /*=============== SCROLL BAR ===============*/
