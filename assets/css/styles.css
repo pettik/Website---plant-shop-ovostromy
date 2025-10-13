@@ -674,7 +674,7 @@ body.dark-theme {
 
 /* Swiper class */
 .dots {
-  bottom: 48px !important;
+  bottom: 3rem !important;
 }
 
 .swiper-pagination-bullet.swiper-pagination-bullet-active {
@@ -688,7 +688,7 @@ body.dark-theme {
 .swiper-button-prev,
 .swiper-button-next {
   top: initial;
-  bottom: 0.5rem;
+  bottom: 2.8rem;
   width: 2rem;
   height: 2rem;
   background-color: var(--container-color);
@@ -701,16 +701,15 @@ body.dark-theme {
 }
 
 .swiper-button-prev {
-  left: calc(50% - 3rem);
+  left: calc(50% - 8rem);
 }
 
 .swiper-button-next {
-  right: calc(50% - 3rem);
+  right: calc(50% - 8rem);
 }
 
 /*=============== GROW  ===============*/
 .grow {
-  margin: 3rem 0;
   padding: 3rem 0;
   background-color: var(--green-dark-color);
 }
