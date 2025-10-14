@@ -712,25 +712,37 @@ body.dark-theme {
 .grow {
   padding: 3rem 0;
   background-color: var(--green-dark-color);
+  min-height: 15rem;
 }
 
 .grow .section__title {
   color: var(--white-color);
   font-weight: 200;
-  font-size: var(--bigger-font-size);
+  font-size: var(--big-font-size);
   text-align: left;
 }
 
 .grow__content {
-  display: flex;
+  position: relative;
 }
 
-.grow__text {
+.grow .grow__title {
+  z-index: 2;
+  line-height: 1.5;
+}
+
+.grow .grow__text {
   display: none;
 }
 
-.grow__image {
-  margin-top: 3rem;
+.grow__image img {
+  position: absolute;
+  bottom: -1.5rem;
+  right: -1rem;
+  max-width: 180px;
+  height: auto;
+
+  z-index: 1;
 }
 /*=============== STEPS ===============*/
 
