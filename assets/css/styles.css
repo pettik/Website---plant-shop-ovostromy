@@ -796,7 +796,7 @@ body.dark-theme {
 
 /*=============== BLOG ===============*/
 .blog.section {
-  padding-block: 4rem;
+  padding: 1rem 0 2rem;
 }
 .blog__container {
   background-color: var(--gray-color);
@@ -839,6 +839,12 @@ body.dark-theme {
 .blog__text p {
   color: var(--black-color);
   font-size: var(--small-font-size);
+  text-align: justify;
+}
+
+.blog_button {
+  width: 100%;
+  text-align: center;
 }
 
 /*=============== INSTAGRAM ===============*/
