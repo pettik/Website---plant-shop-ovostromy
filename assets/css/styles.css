@@ -874,6 +874,12 @@ body.dark-theme {
   height: 100%;
 }
 /*=============== NEWSLETTER ===============*/
+.newsletter__container,
+.newsletter__bg,
+.newsletter__content {
+  max-width: 100%;
+  overflow-x: hidden;
+}
 .newsletter {
   background-color: var(--green-dark-color);
   padding: 4rem 1rem;
@@ -888,30 +894,28 @@ body.dark-theme {
 
 .newsletter__form {
   display: flex;
-  width: 100%; /* zabere celou šířku rodiče (nebo stránky) */
-  max-width: 100%; /* pojistka proti přetečení */
-  column-gap: 0.5rem;
+  gap: 0.5rem; /* moderní náhrada column-gap pro flex */
+  width: 100%;
+  max-width: 100%;
+  flex-wrap: nowrap; /* výchozí – vedle sebe */
 }
 
 .newsletter__input {
-  flex: 1; /* vyplní veškerý zbývající prostor */
+  flex: 1 1 0%; /* roztáhne se a zároveň se může zmenšit */
+  min-width: 0; /* KLÍČOVÉ proti horizontálnímu přetečení */
   padding: 0.75rem 1rem;
-  border: 1px solid #ccc;
-  border: none; /* aby se dotýkal tlačítka bez dvojitého okraje */
-  font-size: 1rem;
-  outline: none;
   background-color: hsl(150deg 24.29% 27.45%);
 }
 
 .newsletter__button {
-  width: 100px; /* pevná šířka */
-  border: none;
+  flex: 0 0 100px; /* drž šířku 100px, bez růstu */
+  padding: 0.2rem 0.25rem;
   background-color: var(--green-color);
-  color: white;
+  color: #fff;
+  border: none;
   cursor: pointer;
   border-radius: 0;
   font-weight: 600;
-  padding: 0.2rem 0.25rem;
 }
 
 .newsletter__button:hover {
