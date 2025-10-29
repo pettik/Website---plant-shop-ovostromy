@@ -715,6 +715,12 @@ body.dark-theme {
   min-height: 15rem;
 }
 
+.grow__container {
+  width: 360px;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
 .grow .section__title {
   color: var(--white-color);
   font-weight: 200;
