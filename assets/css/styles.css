@@ -765,8 +765,10 @@ body.dark-theme {
   font-family: var(--body-font);
 }
 
-.steps__description {
-  text-align: center;
+.steps__content {
+  width: 100%;
+  max-width: 400px;
+  margin: 0 auto;
 }
 
 .steps__items {
@@ -797,6 +799,9 @@ body.dark-theme {
   align-items: center;
 }
 
+.steps__description {
+  text-align: center;
+}
 .steps__step-image img {
   min-width: 40%;
   max-height: 40px;
