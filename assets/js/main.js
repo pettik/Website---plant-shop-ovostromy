@@ -144,7 +144,7 @@ const sr = ScrollReveal({
 sr.reveal(
   `.home__content, .popular__container, .products__container, .join__bg, .footer__container`
 );
-sr.reveal(`.home__image, .blog`, { origin: 'bottom' });
+sr.reveal(`.home__image, .blog,.benefits__data`, { origin: 'bottom' });
 sr.reveal(`.choose__image, .features__image, .grow__title`, { origin: 'left' });
 sr.reveal(`.choose__content, .features__content, .grow__image, .instagram`, {
   origin: 'right',
