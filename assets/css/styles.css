@@ -817,6 +817,10 @@ body.dark-theme {
   display: flex;
   flex-direction: column;
   height: 600px;
+
+  width: 100%;
+  max-width: 400px;
+  margin: 0 auto;
 }
 
 .blog__image,
