@@ -86,12 +86,13 @@ const scrollActive = () => {
         '.nav__menu a[href*=' + sectionId + ']'
       );
 
-    if (scrollY > sectionTop && scrollY <= sectionTop + sectionHeight) {
-      sectionsClass.classList.add('active-link');
-    } else {
-      sectionsClass.classList.remove('active-link');
+    if (sectionsClass) {
+  if (scrollY > sectionTop && scrollY <= sectionTop + sectionHeight) {
+    sectionsClass.classList.add('active-link');
+  } else {
+    sectionsClass.classList.remove('active-link');
+  }
     }
-  });
 };
 window.addEventListener('scroll', scrollActive);
 
@@ -149,3 +150,6 @@ sr.reveal(`.choose__image, .features__image, .grow__title`, { origin: 'left' });
 sr.reveal(`.choose__content, .features__content, .grow__image, .instagram`, {
   origin: 'right',
 });
+
+
+
