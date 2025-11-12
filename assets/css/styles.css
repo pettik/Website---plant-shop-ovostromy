@@ -1465,6 +1465,14 @@ ul.footer__links.address {
     left: calc(50% - 3.5rem);
   }
 
+  .swiper-button-next,
+  .swiper-button-prev {
+    width: 2.5rem;
+    height: 2.5rem;
+    font-size: 2rem;
+    bottom: 5rem;
+  }
+
   .popular__description,
   .choose__description,
   .choose__faq-description,
