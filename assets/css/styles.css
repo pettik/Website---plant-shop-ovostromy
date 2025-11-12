@@ -1585,6 +1585,12 @@ ul.footer__links.address {
     gap: 4rem 3rem;
   }
 
+  .grow__container {
+    width: 90%;
+    max-width: initial;
+    margin: 0 auto;
+  }
+
   .footer {
     padding-block: 3rem;
   }
