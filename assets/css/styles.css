@@ -1586,9 +1586,12 @@ ul.footer__links.address {
   }
 
   .grow__container {
-    width: 90%;
-    max-width: initial;
+    max-width: 1120px;
     margin: 0 auto;
+  }
+
+  .newsletter__container {
+    max-width: 1120px;
   }
 
   .footer {
