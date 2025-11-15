@@ -3,18 +3,6 @@
 
 @import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
-.dm-serif-display-regular {
-  font-family: 'DM Serif Display', serif;
-  font-weight: 400;
-  font-style: normal;
-}
-
-.dm-serif-display-regular-italic {
-  font-family: 'DM Serif Display', serif;
-  font-weight: 400;
-  font-style: italic;
-}
-
 /*=============== VARIABLES CSS ===============*/
 :root {
   --header-height: 3.5rem;
@@ -176,8 +164,7 @@ body.dark-theme {
   box-shadow: 0 2px 16px hsla(0, 0%, 0%, 0.2);
 }
 
-.dark-theme
-  :is(.popular__card:hover, .features__info-card:hover, .products__card:hover) {
+.dark-theme :is(.popular__card:hover, .products__card:hover) {
   box-shadow: 0 12px 16px hsla(0, 0%, 0%, 0.2);
 }
 
@@ -187,10 +174,6 @@ body.dark-theme {
 
 .dark-theme :is(.swiper-button-next, .swiper-button-prev) {
   box-shadow: 0 2px 8px hsla(0, 0%, 0%, 0.2);
-}
-
-.dark-theme .features__info-card {
-  background: linear-gradient(180deg, hsla(0, 0%, 12%, 0), hsl(0, 0%, 15%));
 }
 
 .dark-theme .scrollup {
@@ -1572,9 +1555,6 @@ ul.footer__links.address {
   .features__info {
     grid-template-columns: repeat(2, 200px);
     gap: 2rem;
-  }
-  .features__info-card {
-    padding: 3rem 2rem;
   }
 
   .products__container {
