@@ -1324,6 +1324,15 @@ ul.footer__links.address {
     font-size: var(--bigger-font-size);
   }
 
+  .grow__image img {
+    top: 0;
+    max-width: initial;
+  }
+
+  .grow {
+    min-height: 23rem;
+  }
+
   .footer__data {
     grid-template-columns: repeat(3, max-content);
   }
@@ -1568,6 +1577,11 @@ ul.footer__links.address {
   .grow__container {
     max-width: 1120px;
     margin: 0 auto;
+  }
+
+  .instagram__grid {
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1fr;
   }
 
   .newsletter__container {
