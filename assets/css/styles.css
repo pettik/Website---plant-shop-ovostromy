@@ -5,6 +5,8 @@
 
 /*=============== VARIABLES CSS ===============*/
 :root {
+  --px-300: 300px;
+  --px-400: 400px;
   --header-height: 3.5rem;
   /*========== Colors ==========*/
   /*Color mode HSL(hue, saturation, lightness)*/
@@ -13,8 +15,8 @@
   --dark-gray-color: hsl(0, 0%, 81%);
   --green-dark-color: hsl(153, 64%, 13%);
   --green-color: hsl(148, 62%, 14%);
-  --green-light-color: rgb(34 88 51);
-  --green-lightest-color: rgb(88, 166, 113);
+  --green-light-color: hsl(139, 44%, 24%);
+  --green-lightest-color: hsl(139, 31%, 50%);
   --orangered-color: hsl(19, 49%, 52%);
   --first-color: hsl(15, 60%, 52%);
   --first-color-alt: hsl(15, 68%, 40%);
@@ -362,12 +364,12 @@ body.dark-theme {
   position: absolute;
 }
 .shape__big {
-  width: 400px;
-  height: 400px;
+  width: var(--px-400);
+  height: var(--px-400);
 }
 .shape__small {
-  width: 300px;
-  height: 300px;
+  width: var(--px-300);
+  height: var(--px-300);
 }
 
 .home .shape__big {
@@ -702,7 +704,7 @@ body.dark-theme {
 
 .grow__container {
   width: 100%;
-  max-width: 400px;
+  max-width: var(--px-400);
   margin: 0 auto;
 }
 
@@ -750,7 +752,7 @@ body.dark-theme {
 
 .steps__content {
   width: 100%;
-  max-width: 400px;
+  max-width: var(--px-400);
   margin: 0 auto;
 }
 
@@ -802,17 +804,17 @@ body.dark-theme {
   height: 600px;
 
   width: 100%;
-  max-width: 400px;
+  max-width: var(--px-400);
   margin: 0 auto;
 }
 
 .blog__image,
 .blog__text {
   flex: 1;
-  max-height: 300px;
+  max-height: var(--px-300);
 }
 
-.blog__image {
+4blog__image {
   overflow: hidden;
 }
 
@@ -1119,7 +1121,7 @@ ul.footer__links.address {
   }
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: var(--px-400)) {
   .container {
     margin-inline: 0.5rem;
     max-width: 100vw;
@@ -1599,6 +1601,7 @@ ul.footer__links.address {
     margin-bottom: 1.25rem;
   }
   .footer__links {
+    justify-content: space-evenly;
     row-gap: 1rem;
   }
   .footer__data {
