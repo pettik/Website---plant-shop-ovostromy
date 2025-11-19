@@ -1,7 +1,7 @@
 /*=============== GOOGLE FONTS ===============*/
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&family=Poppins:wght@400;500&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&family=Poppins:wght@400;500&display=swap");
 
-@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
 /*=============== VARIABLES CSS ===============*/
 :root {
@@ -44,9 +44,9 @@
 
   /*========== Font and typography ==========*/
   /*.5rem = 8px | 1rem = 16px ...*/
-  --body-font: 'Poppins', sans-serif;
-  --second-font: 'Montserrat', sans-serif;
-  --title-font: 'DM Serif Display', serif;
+  --body-font: "Poppins", sans-serif;
+  --second-font: "Montserrat", sans-serif;
+  --title-font: "DM Serif Display", serif;
   --bigger-font-size: 2.25rem;
   --big-font-size: 1.6rem;
   --h1-font-size: 1.5rem;
@@ -581,7 +581,7 @@ body.dark-theme {
 }
 
 .popular__data h2::after {
-  content: '';
+  content: "";
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
@@ -669,7 +669,7 @@ body.dark-theme {
 }
 .swiper-button-prev::after,
 .swiper-button-next::after {
-  content: '';
+  content: "";
 }
 
 .swiper-button-prev,
@@ -697,9 +697,8 @@ body.dark-theme {
 
 /*=============== GROW  ===============*/
 .grow {
-  padding: 3rem 0;
   background-color: var(--green-dark-color);
-  min-height: 15rem;
+  padding-bottom: 3rem;
 }
 
 .grow__container {
@@ -708,40 +707,18 @@ body.dark-theme {
   margin: 0 auto;
 }
 
-.grow .section__title {
-  color: var(--white-color);
-  font-weight: 200;
-  font-size: var(--big-font-size);
+.grow__title h2.section__title {
+  color: #fff;
   text-align: left;
 }
 
-.grow__content {
-  position: relative;
-}
-
-.grow .grow__title {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: 2;
-  line-height: 1.5;
-}
-
-.grow .grow__text {
+.grow__text {
   display: none;
 }
-
-.grow__image img {
-  position: absolute;
-  top: 2.5rem;
-  right: -1rem;
-  max-width: 180px;
-  height: auto;
-
-  z-index: 1;
+.grow__content {
+  display: flex;
 }
+
 /*=============== STEPS ===============*/
 
 .steps,
@@ -1039,6 +1016,8 @@ ul.footer__links {
   display: flex;
   align-items: center;
   flex-direction: row;
+  justify-content: space-evenly;
+
   column-gap: 0.75rem;
 }
 
@@ -1318,21 +1297,8 @@ ul.footer__links.address {
     padding: 1rem 0;
   }
 
-  .grow {
-    min-height: 18em;
-  }
-
-  .grow__title h2.section__title {
-    font-size: var(--bigger-font-size);
-  }
-
-  .grow__image img {
-    top: 0;
-    max-width: initial;
-  }
-
-  .grow {
-    min-height: 23rem;
+  .steps__content {
+    max-width: none;
   }
 
   .footer__data {
@@ -1601,7 +1567,6 @@ ul.footer__links.address {
     margin-bottom: 1.25rem;
   }
   .footer__links {
-    justify-content: space-evenly;
     row-gap: 1rem;
   }
   .footer__data {
