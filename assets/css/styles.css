@@ -791,7 +791,7 @@ body.dark-theme {
   max-height: var(--px-300);
 }
 
-4blog__image {
+.blog__image {
   overflow: hidden;
 }
 
@@ -1167,9 +1167,7 @@ ul.footer__links.address {
   .home__container {
     column-gap: 4rem;
   }
-  .home__image {
-    order: 2;
-  }
+
   .home__container,
   .choose__container,
   .features__container,
