@@ -1440,6 +1440,26 @@ ul.footer__links.address {
     font-size: var(--normal-big-font-size);
   }
 
+  .grow__content {
+    column-gap: 1rem;
+  }
+
+  .grow__content > div {
+    flex: 1;
+  }
+
+  .grow__image {
+    order: 2;
+  }
+
+  .grow button.button.grow__button2 {
+    display: none;
+  }
+
+  .grow .grow__text {
+    display: initial;
+  }
+
   .popular__card,
   .products__card {
     width: 230px;
